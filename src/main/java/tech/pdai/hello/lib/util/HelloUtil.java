@@ -1,4 +1,4 @@
-package tech.pdai.springboot.hello.lib.util;
+package tech.pdai.hello.lib.util;
 
 /**
  * @author pdai
