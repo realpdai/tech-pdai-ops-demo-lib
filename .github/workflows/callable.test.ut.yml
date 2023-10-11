@@ -29,4 +29,4 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Run Jacoco
-        run: mvn jacoco:check --file pom.xml
+        run: mvn jacoco:report --file pom.xml

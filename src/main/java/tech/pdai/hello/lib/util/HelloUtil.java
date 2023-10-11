@@ -6,7 +6,7 @@ package tech.pdai.hello.lib.util;
 public final class HelloUtil {
 
     public static String hello(String name) {
-        return String.join("hello ", name);
+        return "hello "+ name;
     }
 
     private HelloUtil() {}
