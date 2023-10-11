@@ -12,3 +12,6 @@ jobs:
   check:
     name: Pre-check Codes
     uses: ./.github/workflows/callable.check.yml
+  test-ut:
+    name: Unit Test
+    uses: ./.github/workflows/callable.test.ut.yml

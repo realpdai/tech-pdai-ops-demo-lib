@@ -1,11 +1,11 @@
-name: Sub-job-Check-Codes
+name: Sub-job-Test-Unit
 
 on:
   workflow_call:
 
 jobs:
-  check-compile:
-    name: Maven Compile Check
+  test-unit:
+    name: Maven Unit Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -15,10 +15,10 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: maven
-      - name: Compile with Maven
-        run: mvn compile --file pom.xml
-  check-codestyle:
-    name: Check Checkstyle
+      - name: Run Unit Test
+        run: mvn test --file pom.xml
+  test-ut-coverage:
+    name: Jacoco Code Coverage
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -28,5 +28,5 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: maven
-      - name: Compile with Maven
-        run: mvn checkstyle:check --file pom.xml
+      - name: Run Jacoco
+        run: mvn jacoco:check --file pom.xml
