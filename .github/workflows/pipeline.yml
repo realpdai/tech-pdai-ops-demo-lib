@@ -11,4 +11,4 @@ on:
 jobs:
   check:
     name: Pre-check Codes
-    uses: ./.github/workflows/call/callable.check.yml
+    uses: ./.github/workflows/callable.check.yml
