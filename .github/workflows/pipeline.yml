@@ -20,7 +20,15 @@ jobs:
     name: SAST Code Analysis (Normal)
     uses: ./.github/workflows/callable.test.sast.normal.yml
     needs: test-ut
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
   sast-advanced:
     name: SAST Code Analysis (Advanced)
     uses: ./.github/workflows/callable.test.sast.advanced.yml
     needs: test-ut
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
