@@ -33,7 +33,6 @@ jobs:
     name: SonarCloud Scan
     runs-on: ubuntu-latest
     timeout-minutes: 360
-
     steps:
       - name: Analyze with SonarCloud
 
