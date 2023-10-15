@@ -28,6 +28,7 @@ jobs:
     name: SAST Code Analysis (Advanced)
     uses: ./.github/workflows/callable.test.sast.advanced.yml
     needs: test-ut
+    secrets: inherit
     permissions:
       actions: read
       contents: read
