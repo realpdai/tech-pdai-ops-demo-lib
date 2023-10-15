@@ -35,11 +35,6 @@ jobs:
     timeout-minutes: 360
 
     steps:
-      - name: show env
-        run: |
-          echo "${{ secrets.SONAR_TOKEN }}"
-          echo "${{ secrets.GITHUB_TOKEN }}"
-
       - name: Analyze with SonarCloud
 
         # You can pin the exact commit or the version.
