@@ -36,6 +36,10 @@ jobs:
         env:
           LIBRARY_NAME: ${{ env.LIBRARY_NAME }}
         run: |
+          cd "$LIBRARY_NAME/target"
+          ls
+          cd "$LIBRARY_NAME/target/site"
+          ls
           cd "$LIBRARY_NAME/target/site/apidocs"
           zip -r ../../../../javadoc.zip .
 
