@@ -123,10 +123,14 @@
                         </execution>
                         <execution>
                             <id>report</id>
-                            <phase>site</phase>
                             <goals>
                                 <goal>report</goal>
                             </goals>
+                            <configuration>
+                                <formats>
+                                    <format>XML</format>
+                                </formats>
+                            </configuration>
                         </execution>
                         <execution>
                             <id>check</id>
@@ -231,6 +235,11 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.4.1</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

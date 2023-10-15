@@ -19,7 +19,7 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Run Maven build javadoc
-        run: mvn javadoc --file pom.xml
+        run: mvn javadoc:jar --file pom.xml
       
       - name: Conclude javadoc version and set env
         run: |
