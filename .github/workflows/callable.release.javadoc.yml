@@ -37,13 +37,13 @@ jobs:
           LIBRARY_NAME: ${{ env.LIBRARY_NAME }}
         run: |
           cd "/home/runner/work/tech-pdai-ops-demo-lib/tech-pdai-ops-demo-lib/target/site/apidocs"
-          zip -r ../../../../javadoc.zip .
+          zip -r /home/runner/work/tech-pdai-ops-demo-lib/javadoc.zip .
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
           name: javadoc.zip
-          path: javadoc.zip
+          path: /home/runner/work/tech-pdai-ops-demo-lib/javadoc.zip
 
   javadoc-deploy:
     name: Deploy (GH Pages)
