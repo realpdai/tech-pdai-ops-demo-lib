@@ -43,6 +43,10 @@
         <jacoco.complexityRatio>0.85</jacoco.complexityRatio>
         <jacoco.lineRatio>0.90</jacoco.lineRatio>
         <jacoco.haltOnFailure>false</jacoco.haltOnFailure>
+
+        <!-- sonarcloud -->
+        <sonar.organization>tech-pdai</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
     <dependencies>
