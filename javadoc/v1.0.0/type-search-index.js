@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"tech.pdai.hello.lib.util","l":"HelloUtil"}];updateSearchResults();
