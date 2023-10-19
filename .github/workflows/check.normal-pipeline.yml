@@ -1,4 +1,4 @@
-name: Lib Maven Pipeline
+name: Normal-Check Pipeline
 
 on:
   push:
