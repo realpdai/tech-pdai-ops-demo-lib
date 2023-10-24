@@ -23,6 +23,13 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+        timeout-minutes: 15
+        with:
+          detached: true
+          sudo: false
+
       - name: Compile with Maven
         run: mvn compile --file pom.xml
 
