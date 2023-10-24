@@ -23,8 +23,10 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
+      # just for SSH debug demo
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
+        if: ${{ failure() }}
         timeout-minutes: 15
         with:
           detached: true
