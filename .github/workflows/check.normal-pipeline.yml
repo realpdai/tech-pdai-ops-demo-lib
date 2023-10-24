@@ -28,7 +28,7 @@ jobs:
         timeout-minutes: 15
         with:
           detached: true
-          sudo: false
+          sudo: true
 
       - name: Compile with Maven
         run: mvn compile --file pom.xml
